@@ -31,9 +31,9 @@ const addMap = () => {
 }
 
 const createMap = () =>{
-    mymap = L.map('mapid').setView([53.3811,1.4701], 6)
+    mymap = L.map('mapid').setView([41.01841,29.22431], 6)
 
-    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    L.tileLayer('https://{s}.tile.www.openstreetmap.org({x}/{y}/{z}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(mymap)
 }
